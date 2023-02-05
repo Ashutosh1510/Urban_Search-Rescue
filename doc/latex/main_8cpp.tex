@@ -1,0 +1,99 @@
+\hypertarget{main_8cpp}{}\section{/home/ashutosh/catkin\+\_\+ws/src/final\+\_\+project/src/main.cpp File Reference}
+\label{main_8cpp}\index{/home/ashutosh/catkin\+\_\+ws/src/final\+\_\+project/src/main.\+cpp@{/home/ashutosh/catkin\+\_\+ws/src/final\+\_\+project/src/main.\+cpp}}
+
+
+The aim of the project is Urban Search \& Rescue by executing the individual tasks of navigating the explorer and follower robots in the given map.  
+
+
+{\ttfamily \#include $<$actionlib/client/simple\+\_\+action\+\_\+client.\+h$>$}\newline
+{\ttfamily \#include $<$fiducial\+\_\+msgs/\+Fiducial\+Transform\+Array.\+h$>$}\newline
+{\ttfamily \#include $<$geometry\+\_\+msgs/\+Twist.\+h$>$}\newline
+{\ttfamily \#include $<$move\+\_\+base\+\_\+msgs/\+Move\+Base\+Action.\+h$>$}\newline
+{\ttfamily \#include $<$tf2/\+Linear\+Math/\+Quaternion.\+h$>$}\newline
+{\ttfamily \#include $<$tf2\+\_\+ros/transform\+\_\+broadcaster.\+h$>$}\newline
+{\ttfamily \#include $<$tf2\+\_\+ros/transform\+\_\+listener.\+h$>$}\newline
+{\ttfamily \#include $<$ros/ros.\+h$>$}\newline
+{\ttfamily \#include $<$std\+\_\+msgs/\+String.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../header/data.\+h\char`\"{}}\newline
+Include dependency graph for main.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{main_8cpp_aef65d976146cab1c9987f30e9c49c6f8}{fiducial\+\_\+callback} (const fiducial\+\_\+msgs\+::\+Fiducial\+Transform\+Array\+::\+Const\+Ptr \&msg)
+\begin{DoxyCompactList}\small\item\em function used to find aruco marker data \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{main_8cpp_a299d89c50484c4d3a597f6b43b65e21c}\label{main_8cpp_a299d89c50484c4d3a597f6b43b65e21c}} 
+void \hyperlink{main_8cpp_a299d89c50484c4d3a597f6b43b65e21c}{broadcast} ()
+\begin{DoxyCompactList}\small\item\em Function used to collect data from camera frame. \end{DoxyCompactList}\item 
+void \hyperlink{main_8cpp_a1cb8c936ae579242b9f9fe4f9d172e73}{listen} (tf2\+\_\+ros\+::\+Buffer \&tf\+Buffer, double x, double y)
+\begin{DoxyCompactList}\small\item\em Function used to map follower path in aruco marker order. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}} 
+int {\bfseries main} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The aim of the project is Urban Search \& Rescue by executing the individual tasks of navigating the explorer and follower robots in the given map. 
+
+\begin{DoxyAuthor}{Authors}
+Sri Sai Charan Velisetti (\href{mailto:svellise@umd.edu}{\tt svellise@umd.\+edu}), Mukundhan Rajendiran (\href{mailto:mrajeni@umd.edu}{\tt mrajeni@umd.\+edu}), Ashutosh Reddy Atimyala (\href{mailto:atimyala@umd.edu}{\tt atimyala@umd.\+edu}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2021-\/12-\/15
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2021 
+\end{DoxyCopyright}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_aef65d976146cab1c9987f30e9c49c6f8}\label{main_8cpp_aef65d976146cab1c9987f30e9c49c6f8}} 
+\index{main.\+cpp@{main.\+cpp}!fiducial\+\_\+callback@{fiducial\+\_\+callback}}
+\index{fiducial\+\_\+callback@{fiducial\+\_\+callback}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{fiducial\+\_\+callback()}{fiducial\_callback()}}
+{\footnotesize\ttfamily void fiducial\+\_\+callback (\begin{DoxyParamCaption}\item[{const fiducial\+\_\+msgs\+::\+Fiducial\+Transform\+Array\+::\+Const\+Ptr \&}]{msg }\end{DoxyParamCaption})}
+
+
+
+function used to find aruco marker data 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 267 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a1cb8c936ae579242b9f9fe4f9d172e73}\label{main_8cpp_a1cb8c936ae579242b9f9fe4f9d172e73}} 
+\index{main.\+cpp@{main.\+cpp}!listen@{listen}}
+\index{listen@{listen}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{listen()}{listen()}}
+{\footnotesize\ttfamily void listen (\begin{DoxyParamCaption}\item[{tf2\+\_\+ros\+::\+Buffer \&}]{tf\+Buffer,  }\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})}
+
+
+
+Function used to map follower path in aruco marker order. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tf\+Buffer} & \\
+\hline
+{\em x} & //\+Current postion of robot in x-\/axis \\
+\hline
+{\em y} & //\+Current postion of robot in y-\/axis \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 63 of file main.\+cpp.
+

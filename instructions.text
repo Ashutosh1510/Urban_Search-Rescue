@@ -1,0 +1,31 @@
+ENPM 809Y - Final Project- Team Members
+	Sri Sai Charan Velisetti (UID-117509755)
+	Mukundhan Rajendiran (UID-118154534)
+	Ashutosh Reddy Atimyala (UID- 118442129)
+
+##########################################################################################
+URBAN SEARCH AND RESCUE USING EXPLORER AND FOLLOWER ROBTS WITH ARUCO MARKERS AS VICTIMS
+##########################################################################################
+
+InstructionS to create a workspace and build the package:
+1. Create a workspace
+   $ mkdir -p ~/catkin_ws/source
+2. Copy the package into the source.
+
+3. Open a terminal and navigate to catkin_ws
+	$ cd catkin_ws
+
+4. Build the package
+   $ catkin build 
+
+Instructions to Run the package:
+
+1. Open a new terminal
+2. Navigate to the catkin_ws workspace.
+3. Source the terminal
+	$ source ~/devel/setup.bash 
+4. To open Gazebo and Rviz with robots use the command.
+	$  roslaunch final_project multiple_robots.launch  
+5. Open a new terminal and source the folder using "source ~/devel/setup.bash " in catkin_ws.
+6. To run the explorer and follower bot.
+	$ rosrun final_project final_project_node. 
