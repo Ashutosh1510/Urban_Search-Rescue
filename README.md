@@ -3,9 +3,8 @@
 ## Objective
 
 This project is inspired by the challenge of autonomous robotics for Urban Search and Rescue (US&R). In US&R after a disaster occurs, a robot is used to explore an unknown environment, such as a partially collapsed building, and locates trapped or unconscious human victims of the disaster. The robot builds a map of the collapsed building as it explores, and places markers in the map of where the victims are located. This map is then given to trained First Responders who use it to go into the building and rescue the victims.  
-• Instead of simulated victims, we use ArUco markers (squared ﬁducial markers).
-• We will use a turtlebot (called explorer) to use a map of the building to find victims
-(markers). We will then use another turlebot (called follower) to fetch the victims.
+• Instead of simulated victims, we use ArUco markers (squared ﬁducial markers)  
+• We will use a turtlebot (called explorer) to use a map of the building to find victims (markers). We will then use another turlebot (called follower) to fetch the victims.
 
 ## Build the Package
 
