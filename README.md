@@ -42,4 +42,9 @@ source devel/setup.bash
 rosrun final_project final_project_node
 ```
 
+## Authors
+1. Sri Sai Charan Velisetti
+2. Mukundan Rajendiran
+3. Ashutosh Reddy Atimyala
+
 
